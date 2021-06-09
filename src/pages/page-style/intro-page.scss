@@ -1,0 +1,40 @@
+*{
+  margin:0%;
+  padding:0%;
+}
+
+.intro-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: .9rem 0rem;
+  img{
+    max-width: 35rem;
+  }
+}
+.intro_text{
+  h1{
+    text-align: center;
+    color:var(--tex-primery);
+    font-family:var(--boldFont);
+
+  }
+  p{
+    text-align: center;
+    color:var(--tex-primery);
+    font-family:var(--smallFont);
+  }
+  .btn{
+    background:var(--bg-btn);
+    color:var(--tex-primery);
+    font-family: var(--boldFont);
+    border: none;
+    outline: none;
+  }
+  .btn:hover{
+    background-color: rgba(63, 255, 255, 0.905);
+  }
+}
+
+

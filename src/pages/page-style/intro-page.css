@@ -1,0 +1,50 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.intro-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: .9rem 0rem;
+}
+
+.intro-image img {
+  max-width: 35rem;
+}
+
+.intro_text h1 {
+  text-align: center;
+  color: var(--tex-primery);
+  font-family: var(--boldFont);
+}
+
+.intro_text p {
+  text-align: center;
+  color: var(--tex-primery);
+  font-family: var(--smallFont);
+}
+
+.intro_text .btn {
+  background: var(--bg-btn);
+  color: var(--tex-primery);
+  font-family: var(--boldFont);
+  border: none;
+  outline: none;
+}
+
+.intro_text .btn:hover {
+  background-color: rgba(63, 255, 255, 0.905);
+}
+/*# sourceMappingURL=intro-page.css.map */
