@@ -24,7 +24,7 @@ body{
   background-color: var(--bg-dark);
 }
 
-
+// Media Query for width: 120px
 @media screen and (min-width : 120px) {
   .header-navBar{
     width: 100%;
@@ -63,7 +63,23 @@ body{
  
    }
  }
+ .feature-page{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+
+  .features-btn{
+    p{
+      font-family: var(--smallFont);
+      color:var(--tex-primery)
+    }
+  }
+}
+
+
  }
+
+// Media Query for width: 280px
 @media screen and (min-width : 280px) {
   .header-navBar{
     width: 100%;
@@ -135,7 +151,7 @@ body{
   font-family:var(--smallFont);
   text-align: center;
   font-size: 10px;
-  line-height: 1.5rem;
+  line-height: 1rem;
   }
   .btn{
     background:var(--bg-btn);
@@ -147,7 +163,34 @@ body{
     border-radius: 1.6rem;
   }
 }
- }
+.feature-page{
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+  grid-template-rows: repeat(4,auto);
+  grid-row-gap: 5rem;
+  margin-top: 3rem;
+
+  .features-btn{
+    img{
+      margin-bottom: 1.4rem;
+    }
+    h1{
+      font-size: 20px;
+      margin: .6rem 0px;
+    }
+    p{
+      width:18rem;
+      font-size: 10px;
+      line-height: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+}
+
+
+// Media Query for width: 480px
  @media screen and (min-width : 480px) {
   .header-navBar{
     width: 100%;
@@ -226,9 +269,33 @@ body{
     border-radius: 1.6rem;
   }
 }
- 
+.feature-page{
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+  grid-template-rows: repeat(4,auto);
+  grid-row-gap: 5rem;
+  margin-top: 3rem;
+
+  .features-btn{
+    img{
+      margin-bottom: 1.4rem;
+    }
+    h1{
+      font-size: 20px;
+      margin: .6rem 0px;
+    }
+    p{
+      width: 18rem;
+      font-size: 10px;
+      line-height: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
  }
 
+
+// Media Query for width: 600px
  @media screen and (min-width : 600px) {
   .header-navBar{
     width: 100%;
@@ -307,9 +374,36 @@ body{
     border-radius: 1.6rem;
   }
 }
+.feature-page{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+  grid-row-gap: 5rem;
+  margin-top: 3rem;
+  max-width: 50rem;
+  margin:0px auto;
+  margin-top: 4rem;
+
+  .features-btn{
+    img{
+      margin-bottom: 1.4rem;
+    }
+    h1{
+      font-size: 20px;
+      margin: .6rem 0px;
+    }
+    p{
+      max-width: 20rem;
+      font-size: 10px;
+      line-height: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
  }
 
 
+// Media Query for width: 801px
  @media screen and (min-width : 801px) {
   .header-navBar{
     width:100%;
@@ -388,7 +482,36 @@ body{
     border-radius: 1.6rem;
   }
 }
+.feature-page{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+  grid-row-gap: 5rem;
+  margin-top: 3rem;
+  max-width: 50rem;
+  margin:0px auto;
+  margin-top: 4rem;
+
+  .features-btn{
+    img{
+      margin-bottom: 1.4rem;
+    }
+    h1{
+      font-size: 20px;
+      margin: .6rem 0px;
+    }
+    p{
+      max-width: 20rem;
+      font-size: 10px;
+      line-height: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
  }
+
+
+// Media Query for width: 1025px
  @media screen and (min-width : 1025px) {
   .header-navBar{
     width: 100%;
@@ -467,8 +590,36 @@ body{
     border-radius: 1.6rem;
   }
 }
+.feature-page{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+  grid-row-gap: 5rem;
+  margin-top: 3rem;
+  max-width: 50rem;
+  margin:0px auto;
+  margin-top: 4rem;
+
+  .features-btn{
+    img{
+      margin-bottom: 1.4rem;
+    }
+    h1{
+      font-size: 20px;
+      margin: .6rem 0px;
+    }
+    p{
+      max-width: 20rem;
+      font-size: 10px;
+      line-height: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
  }
 
+
+// Media Query for width: 1281px
  @media screen and (min-width : 1281) {
   .header-navBar{
     width: 100%;
@@ -545,6 +696,32 @@ body{
     width: 18rem;
     height: 3rem;
     border-radius: 1.6rem;
+  }
+}
+.feature-page{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+  grid-row-gap: 5rem;
+  margin-top: 3rem;
+  max-width: 50rem;
+  margin:0px auto;
+  margin-top: 4rem;
+
+  .features-btn{
+    img{
+      margin-bottom: 1.4rem;
+    }
+    h1{
+      font-size: 20px;
+      margin: .6rem 0px;
+    }
+    p{
+      max-width: 20rem;
+      font-size: 10px;
+      line-height: 1rem;
+      letter-spacing: 1px;
+    }
   }
 }
  }

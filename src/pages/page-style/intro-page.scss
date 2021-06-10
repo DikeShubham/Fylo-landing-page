@@ -1,3 +1,4 @@
+
 *{
   margin:0%;
   padding:0%;
@@ -34,6 +35,30 @@
   }
   .btn:hover{
     background-color: rgba(63, 255, 255, 0.905);
+  }
+}
+
+// feature page
+.feature-page{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+
+  .features-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+      color:var(--tex-primery);
+      font-family: var(--boldFont);
+      text-align: center;
+    }
+    p{
+      text-align:center;
+      font-family: var(--smallFont);
+      color:var(--tex-primery)
+    }
   }
 }
 

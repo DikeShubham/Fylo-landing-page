@@ -47,4 +47,41 @@
 .intro_text .btn:hover {
   background-color: rgba(63, 255, 255, 0.905);
 }
+
+.feature-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+}
+
+.feature-page .features-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature-page .features-btn h1 {
+  color: var(--tex-primery);
+  font-family: var(--boldFont);
+  text-align: center;
+}
+
+.feature-page .features-btn p {
+  text-align: center;
+  font-family: var(--smallFont);
+  color: var(--tex-primery);
+}
 /*# sourceMappingURL=intro-page.css.map */
