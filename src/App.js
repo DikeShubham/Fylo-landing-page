@@ -2,6 +2,7 @@ import React from "react"
 import {Nav_Bar} from "./components/header/Nav-Bar"
 import {Intro} from "./pages/intro"
 import {Feature} from "./pages/Feature"
+import {Team} from "./pages/team"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Nav_Bar/>
       <Intro/>
       <Feature/>
+      <Team/>
       </div>
     </div>
   );

@@ -62,4 +62,24 @@
   }
 }
 
+// Team page
+.team-page{
+  margin: 5rem 0px;
+}
+.text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column  ;
+  h1{
+    font-family: var(--boldFont);
+    text-align: center;
+    color: var(--tex-primery);
+  }
+  p{
+    color: var(--tex-primery);
+    font-family: var(--smallFont);
+    text-align:start;
+  }
+}
 

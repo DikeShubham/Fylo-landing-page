@@ -5,12 +5,17 @@
 ul{
   list-style: none;
   li{
+    padding: 2px ;
+    border: 2px solid transparent;
     a{
       font-family: "monsterrat";
       color: var(--tex-primery);
-      text-decoration: none;
       cursor: pointer;
     }
+  }
+  li:hover{
+    padding: 2px ;
+    border-bottom: 2px solid #fff;
   }
 }
 @media screen and (min-width : 120px) {
