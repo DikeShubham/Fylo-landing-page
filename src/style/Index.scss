@@ -1,0 +1,868 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+:root {
+  --bg-dark: #181e2a;
+  --tex-primery: #fff;
+  --boldFont: "BreeSerif";
+  --smallFont: "monsterrat";
+  --bg-btn: #48f4f6;
+  --fontEigh:8px;
+  --fontTen:10px;
+  --fontTwe:12px;
+  --fontFourt:14px;
+  --fontSix:16px;
+  --fontEight:18px;
+  --fontTwenty:20px;
+  --fontTevis:24px
+  --fontTweSix:26px;
+  --fontThirty:30px;
+}
+body {
+  padding: 1rem;
+  background-color: var(--bg-dark);
+}
+.header-navBar {
+  width: 24rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 4rem;
+    height: 1rem;
+  }
+}
+.menu-section {
+  ul {
+    list-style: none;
+    height: 2rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    li {
+      padding: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        font-family: var(--smallFont);
+        color: var(--tex-primery);
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        outline: none;
+      }
+    }
+    a:hover{
+      border-bottom: 2px solid rgba(136, 108, 108, 0.748);
+      color: rgba(255, 255, 255, 0.748);
+    }
+    li:hover{
+      padding: 2px;
+    }
+  }
+}
+
+// Media Query for width: 120px
+@media screen and (min-width: 120px) {
+  .header-navBar {
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fylo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 2rem;
+      height: 1rem;
+    }
+  }
+  .menu-section {
+    ul {
+      height: 2rem;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-column-gap: 0.3rem;
+      justify-content: center;
+      align-items: center;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  .feature-page {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+
+    .features-btn {
+      p {
+        font-family: var(--smallFont);
+        color: var(--tex-primery);
+      }
+    }
+  }
+  .team-page {
+    margin: 5rem 0px;
+  }
+
+  .teamImage {
+  }
+  .text-container {
+    h1 {
+      font-family: var(--boldFont);
+      color: var(--tex-primery);
+    }
+    p {
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+    }
+  }
+}
+
+// Media Query for width: 280px
+@media screen and (min-width: 280px) {
+  .header-navBar {
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fylo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 4rem;
+      height: 1rem;
+    }
+  }
+  .menu-section {
+    ul {
+      height: 2rem;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-column-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          font-size: var(--fontEigh);
+        }
+      }
+    }
+  }
+
+  //  Intro Page
+  .intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      max-width: 18rem;
+    }
+  }
+  .intro_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 17rem;
+    h1 {
+      text-align: center;
+      line-height: 1.8rem;
+      font-size: var(--fontTevis);
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin-bottom: 0.9rem;
+      white-space: wrap;
+    }
+    p {
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      text-align: center;
+      font-size: var(--fontTen);
+      line-height: 1rem;
+    }
+    .btn {
+      background: var(--bg-btn);
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin: 0.9rem 0rem;
+      width: 14rem;
+      height: 3rem;
+      border-radius: 1.6rem;
+    }
+  }
+
+  // Features Page
+  .feature-page {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 5rem;
+    margin-top: 3rem;
+
+    .features-btn {
+      img {
+        margin-bottom: 1.4rem;
+      }
+      h1 {
+        font-size: var(--fontTwenty);
+        margin: 0.6rem 0px;
+      }
+      p {
+        width: 18rem;
+        font-size: var(--fontFourt);
+        line-height: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  // Team page
+  .team-page {
+    margin: 5rem 0px;
+  }
+
+  .teamImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 18rem;
+    }
+  }
+  .text-container {
+    h1 {
+      font-size: 20px;
+      font-family: var(--boldFont);
+      color: var(--tex-primery);
+      margin: 1rem 0px;
+    }
+    p {
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: var(--fontTwe);
+      font-size: 12px;
+      margin: 0.6rem 0px; 
+      max-width: 30rem;
+    }
+  }
+}
+
+// Media Query for width: 480px
+@media screen and (min-width: 480px) {
+  .header-navBar {
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fylo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img {
+      width: 6rem;
+      height: 1.8rem;
+    }
+  }
+  .menu-section {
+    ul {
+      height: 2rem;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-column-gap: 1.3rem;
+      justify-content: center;
+      align-items: center;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      max-width: 24rem;
+    }
+  }
+  .intro_text {
+    width: 26rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    h1 {
+      line-height: 2rem;
+      font-size: 26px;
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin-bottom: 0.9rem;
+    }
+    p {
+      width: 24rem;
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: 14px;
+      line-height: 1.2rem;
+    }
+    .btn {
+      background: var(--bg-btn);
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin: 0.9rem 0rem;
+      width: 18rem;
+      height: 3rem;
+      border-radius: 1.6rem;
+    }
+  }
+  .feature-page {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 5rem;
+    margin-top: 3rem;
+
+    .features-btn {
+      img {
+        margin-bottom: 1.4rem;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0.6rem 0px;
+      }
+      p {
+        width: 18rem;
+        font-size: 10px;
+        line-height: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .team-page {
+    margin: 5rem 0px;
+  }
+
+  .teamImage {
+  }
+  .text-container {
+    h1 {
+      font-family: var(--boldFont);
+      color: var(--tex-primery);
+    }
+    p {
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+    }
+  }
+
+  .team-page {
+    margin: 5rem 0px;
+  }
+
+  .teamImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 26rem;
+    }
+  }
+  .text-container {
+    h1 {
+      font-size: 32px;
+      font-family: var(--boldFont);
+      color: var(--tex-primery);
+      margin: 2rem 0px 1rem 0px;
+    }
+    p {
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: 14px;
+      margin: 0.5rem 0px;
+      max-width: 28rem;
+      line-height: 1.5rem;
+      text-align: start;
+    }
+  }
+}
+
+// Media Query for width: 600px
+@media screen and (min-width: 600px) {
+  .header-navBar {
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fylo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img {
+      width: 6rem;
+      height: 1.8rem;
+    }
+  }
+  .menu-section {
+    ul {
+      height: 2rem;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-column-gap: 1.3rem;
+      justify-content: center;
+      align-items: center;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          font-size: var(--fontTen);
+        }
+      }
+    }
+  }
+  .intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      max-width: 30rem;
+    }
+  }
+  .intro_text {
+    width: 26rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    h1 {
+      line-height: 2.3rem;
+      font-size:var(--fontThirty);
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin-bottom: 0.9rem;
+    }
+    p {
+      width: 28rem;
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: var(--fontSix);
+      line-height: 1.4rem;
+    }
+    .btn {
+      background: var(--bg-btn);
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin: 0.9rem 0rem;
+      width: 18rem;
+      height: 3rem;
+      border-radius: 1.6rem;
+      font-size: var(--fontSix);
+    }
+  }
+  .feature-page {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 5rem;
+    margin-top: 3rem;
+    max-width: 50rem;
+    margin: 0px auto;
+    margin-top: 4rem;
+
+    .features-btn {
+      img {
+        margin-bottom: 1.4rem;
+      }
+      h1 {
+        font-size: var(--fontTwenty);
+        margin: 0.6rem 0px;
+      }
+      p {
+        max-width: 20rem;
+        font-size: var(--fontTen);
+        line-height: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .team-page {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 5rem 0px;
+    grid-column-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .teamImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 18rem;
+    }
+  }
+  .text-container {
+    // border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+      word-wrap: break-word;
+      font-size: var(--fontThirty);
+      font-family: var(--boldFont);
+      color: var(--tex-primery);
+      max-width: 16rem;
+      text-align: left;
+      line-height: 2rem;
+    }
+    p {
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: var(--fontTwe);
+      max-width: 20rem;
+      line-height: 1.2rem;
+      text-align: start;
+    }
+  }
+}
+
+// Media Query for width: 801px
+@media screen and (min-width: 801px) {
+  .header-navBar {
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fylo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img {
+      width: 6rem;
+      height: 1.8rem;
+    }
+  }
+  .menu-section {
+    ul {
+      height: 2rem;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-column-gap: 1.3rem;
+      justify-content: center;
+      align-items: center;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      max-width: 30rem;
+    }
+  }
+  .intro_text {
+    width: 26rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    h1 {
+      line-height: 2rem;
+      font-size: 26px;
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin-bottom: 0.9rem;
+    }
+    p {
+      width: 20rem;
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: 10px;
+      line-height: 1rem;
+    }
+    .btn {
+      background: var(--bg-btn);
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin: 0.9rem 0rem;
+      width: 18rem;
+      height: 3rem;
+      border-radius: 1.6rem;
+    }
+  }
+  .feature-page {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 5rem;
+    margin-top: 3rem;
+    max-width: 50rem;
+    margin: 0px auto;
+    margin-top: 4rem;
+
+    .features-btn {
+      img {
+        margin-bottom: 1.4rem;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0.6rem 0px;
+      }
+      p {
+        max-width: 20rem;
+        font-size: 10px;
+        line-height: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .team-page {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 5rem 0px;
+    grid-column-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .teamImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 25rem;
+    }
+  }
+  .text-container {
+    // border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+      word-wrap: break-word;
+      font-size: 30px;
+      font-family: var(--boldFont);
+      color: var(--tex-primery);
+      max-width: 16rem;
+      text-align: left;
+      // border: 1px solid red;
+      line-height: 2rem;
+    }
+    p {
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: 12px;
+      max-width: 20rem;
+      line-height: 1.2rem;
+      text-align: start;
+    }
+  }
+}
+
+// Media Query for width: 1025px
+@media screen and (min-width: 1025px) {
+  .header-navBar {
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fylo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img {
+      width: 6rem;
+      height: 1.8rem;
+    }
+  }
+  .menu-section {
+    ul {
+      height: 2rem;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-column-gap: 1.3rem;
+      justify-content: center;
+      align-items: center;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      max-width: 30rem;
+    }
+  }
+  .intro_text {
+    width: 26rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    h1 {
+      line-height: 2rem;
+      font-size: 26px;
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin-bottom: 0.9rem;
+    }
+    p {
+      width: 20rem;
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: 10px;
+      line-height: 1rem;
+    }
+    .btn {
+      background: var(--bg-btn);
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      margin: 0.9rem 0rem;
+      width: 18rem;
+      height: 3rem;
+      border-radius: 1.6rem;
+    }
+  }
+  .feature-page {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 5rem;
+    margin-top: 3rem;
+    max-width: 50rem;
+    margin: 0px auto;
+    margin-top: 4rem;
+
+    .features-btn {
+      img {
+        margin-bottom: 1.4rem;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0.6rem 0px;
+      }
+      p {
+        max-width: 20rem;
+        font-size: 10px;
+        line-height: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .team-page {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 5rem 0px;
+    grid-column-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .teamImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 36rem;
+    }
+  }
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+      max-width: 22rem;
+      word-wrap: break-word;
+      font-size: 42px;
+      font-family: var(--boldFont);
+      color: var(--tex-primery);
+      text-align: left;
+      // border: 1px solid red;
+      line-height: 3rem;
+    }
+    p {
+      color: var(--tex-primery);
+      font-family: var(--smallFont);
+      font-size: 14px;
+      max-width: 24rem;
+      line-height: 1.2rem;
+      text-align: start;
+    }
+  }
+}

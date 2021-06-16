@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "BreeSerif";
+  src: local("BreeSerif"), url(./font/BreeSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "monsterrat";
+  src: local("monsterrat"), url(./font/Montserrat-Regular.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.intro-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.9rem 0rem;
+  img {
+    max-width: 35rem;
+  }
+}
+.intro_text {
+  h1 {
+    text-align: center;
+    font-family: var(--boldFont);
+  }
+  p {
+    text-align: center;
+    color: var(--tex-primery);
+    font-family: var(--smallFont);
+    opacity: 0.7;
+  }
+  .btn {
+    background: var(--bg-btn);
+    color: var(--tex-primery);
+    font-family: var(--boldFont);
+    border: none;
+    outline: none;
+  }
+  .btn:hover {
+    background-color: rgba(63, 255, 255, 0.905);
+  }
+}
+
+// feature page
+.feature-page {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+
+  .features-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      color: var(--tex-primery);
+      font-family: var(--boldFont);
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-family: var(--smallFont);
+      color: var(--tex-primery);
+    opacity: 0.7;
+
+    }
+  }
+}
+
+// Team page
+.team-page {
+  margin: 5rem 0px;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-family: var(--boldFont);
+    text-align: center;
+    color: var(--tex-primery);
+  }
+  p {
+    color: var(--tex-primery);
+    font-family: var(--smallFont);
+    text-align: start;
+    opacity: 0.7;
+
+  }
+}

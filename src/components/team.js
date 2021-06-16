@@ -1,5 +1,9 @@
 import React from 'react'
+// Proditivit Icon
 import ProditivePage from './images/illustration-stay-productive.png'
+// css
+import "./style/components.css"
+
 
 export const Team = () => {
   return (
